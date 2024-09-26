@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h1{
+    font-family:'Almendra';
+    font-size: 60px;
+    color: lavender;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 20px;
+    color: black;
+}
+
+p:not(.papayasen) {
+    width: 60%;
+    margin: 0 auto 20px auto;
+
+}
+
+.dropcap::first-letter {
+    font-size: 1.5em;
+    float: left;
+    margin-right: 5px;
+    line-height: 0.8;
+    font-weight: bold;
+    font-style: italic;
+}
+
+i {
+    color: palevioletred;
+}
+
+i{
+    display:inline-flex
+}
+
+a:link {
+    color: black;
+}
+a:visited {
+    color: grey;
+    font-weight: bold;
+}
+a:hover {
+    color: lightpink;
+}
+
+.papayasen {
+    font-family: 'Almendra', regular;
+    font-weight: lighter;
+    font-size: 14px;
+    background-color: #ffefd5;
+    padding: 3px;
+    text-align: right;
+}
+
+.right-align {
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.firstletter::first-letter {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/*#heading{
+
+}
+*/
