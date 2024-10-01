@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  width:100vw;
+  height:120vh;
+  overflow: hidden;
+  background-color: beige;
+}
+
+#space-invader {
+  box-shadow: 
+    /* Space Invader: Nose baby pink */
+    3em 2em 0 0.1em rgb(252, 179, 248),
+
+    /* Space Invader: Core */
+    3em 1.2em 0 1em rgb(0, 0, 0),
+    3em 2.2em 0 1em rgb(0, 0, 0),
+    0.5em 2.7em 0 .5em rgb(0, 0, 0),
+    5.5em 2.7em 0 .5em rgb(0, 0, 0),
+
+    /* Space Invader: Antenna soft blur */
+    0em -1.8em 2px 0 rgb(0, 0, 0),
+    6em -1.8em 2px 0 rgb(0, 0, 0),
+
+    /* Space Invader: Rest of the shape */
+    1em -0.8em 0 0 rgb(0, 0, 0),
+    5em -0.8em 0 0 rgb(0, 0, 0),
+    0em 0.2em 0 0 rgb(0, 0, 0),
+    1em 0.2em 0 0 rgb(0, 0, 0),
+    5em 0.2em 0 0 rgb(0, 0, 0),
+    6em 0.2em 0 0 rgb(0, 0, 0),
+    -1em 1.2em 0 0 rgb(0, 0, 0),
+    0em 1.2em 0 0 rgb(0, 0, 0),
+    6em 1.2em 0 0 rgb(0, 0, 0),
+    7em 1.2em 0 0 rgb(0, 0, 0),
+    -2em 2.2em 0 0 rgb(0, 0, 0),
+    -1em 2.2em 0 0 rgb(0, 0, 0),
+    7em 2.2em 0 0 rgb(0, 0, 0),
+    8em 2.2em 0 0 rgb(0, 0, 0),
+    -2em 3.2em 0 0 rgb(0, 0, 0),
+    8em 3.2em 0 0 rgb(0, 0, 0),
+    -2em 4.2em 0 0 rgb(0, 0, 0),
+    0em 4.2em 0 0 rgb(0, 0, 0),
+    6em 4.2em 0 0 rgb(0, 0, 0),
+    8em 4.2em 0 0 rgb(0, 0, 0),
+    1em 5.2em 0 0 rgb(0, 0, 0),
+    2em 5.2em 0 0 rgb(0, 0, 0),
+    4em 5.2em 0 0 rgb(0, 0, 0),
+    5em 5.2em 0 0 rgb(0, 0, 0),
+
+  /* Pixel y */
+  15em 0 5px 1em rgb(0, 0, 0),
+  14em 2em 5px 1em rgb(0, 0, 0),
+  13.5em 4em 5px 1em rgb(0, 0, 0),
+  14em 6em 5px 1em rgb(0, 0, 0),
+  16.4em 6em 5px 1em rgb(0, 0, 0),
+  19em 6em 5px 1em rgb(0, 0, 0),
+  20em 4em 5px 1em rgb(0, 0, 0),
+  21em 2em 5px 1em rgb(0, 0, 0),
+  22em 0em 5px 1em rgb(0, 0, 0),
+  21.8em 2em 5px 1em rgb(0, 0, 0),
+  21.6em 4em 5px 1em rgb(0, 0, 0),
+  21.4em 6em 5px 1em rgb(0, 0, 0),
+  21em 8em 5px 1em rgb(0, 0, 0),
+  20.4em 10em 5px 1em rgb(0, 0, 0),
+  19.4em 12em 5px 1em rgb(0, 0, 0),
+  18em 13em 5px 1em rgb(0, 0, 0),
+  16em 13em 5px 1em rgb(0, 0, 0),
+  14em 13em 5px 1em rgb(0, 0, 0),
+  12.7em 12.3em 5px 1em rgb(0, 0, 0),
+  11.7em 11em 5px 1em rgb(0, 0, 0),
+  11.7em 10em 5px 1em rgb(0, 0, 0);
+
+  background: rgb(0, 0, 0);
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;
+}
+
+.oval-container {
+  position:relative;
+}
+
+.oval-one {
+  position:relative;
+  width: 100px;
+  height: 200px;
+  background: rgb(208, 12, 12);
+  border-radius: 60%;
+  transform: translate(180px) rotate(-30deg) scale(.9);
+}
+
+.oval-two {
+  position:relative;
+  width: 100px;
+  height: 200px;
+  background: rgb(208, 12, 12);
+  border-radius: 60%;
+  transform: translate(299px, -197px) rotate(30deg) scale(.9);
+}
+
+.oval-three {
+  position:relative;
+  width: 100px;
+  height: 200px;
+  background: rgb(208, 12, 12);
+  border-radius: 60%;
+  transform: translate(206px, -243px) rotate(30deg)scale(.9);
+}
+
+.moon-container {
+  position: relative;
+  margin-top: 40px;
+}
+
+.moon-one {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 12px 12px 0 0 rgb(194, 190, 227);
+  transform: translate(200px, -100px) rotate(130deg);
+}
+
+.moon-two {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 12px 12px 0 0 rgb(194, 190, 227);
+  transform: translate(200px, -112px) rotate(100deg);
+}
+
+.moon-three {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 12px 12px 0 0 rgb(194, 190, 227);
+  transform: translate(248px, -160px) rotate(50deg);
+}
+
+.moon-four {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 12px 12px 0 0 rgb(194, 190, 227);
+  transform: translate(293px, -250px) rotate(-10deg);
+}
+
+.moon-five {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 12px 12px 0 0 rgb(194, 190, 227);
+  transform: translate(310px, -380px) rotate(-30deg);
+}
+
+.moon-six {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 12px 12px 0 0 rgb(194, 190, 227);
+  transform: translate(392px, -397px) rotate(130deg);
+}
+
+.moon-seven {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 12px 12px 0 0 rgb(194, 190, 227);
+  transform: translate(320px, -415px) rotate(-20deg);
+}
+
+.moon-eight {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 12px 12px 0 0 rgb(194, 190, 227);
+  transform: translate(320px, -416px) rotate(-20deg);
+}
+
+.moon-nine {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 12px 12px 0 0 rgb(194, 190, 227);
+  transform: translate(290px, -435px) rotate(10deg);
+}
+
+.moon-ten {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 12px 12px 0 0 rgb(194, 190, 227);
+  transform: translate(235px, -505px) rotate(50deg);
+}
+
+.moon-eleven {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 12px 12px 0 0 rgb(194, 190, 227);
+  transform: translate(193px, -600px) rotate(110deg);
+}
+
+.magic-container {
+  position: relative;
+  margin-top: -80px;
+  margin-left: 100px;
+}
+
+.magic-one{
+  position: relative;
+  width: 100px;
+  height: 45px;
+  border-radius: 15px 25px 5px 10px;
+  background: rgb(195, 92, 153);
+  transform: translate(0px, -0.5px) rotate(-90deg);
+}
+
+.magic-two{
+  position: relative;
+  width: 400px;
+  height: 65px;
+  border-radius: 15px 50px 8px 25px;
+  background: rgb(195, 92, 153);
+  transform: translate(-15px, 27px);
+}
+
+.magic-two:hover {
+  background: url('https://github.com/hrah03/hrah03.github.io/blob/main/stars.gif?raw=true') no-repeat center center;
+  background-size: cover;
+}
+
+.magic-three{
+  position: relative;
+  width: 100px;
+  height: 45px;
+  border-radius: 50px 50px 50px 50px;
+  background: rgb(195, 92, 153);
+  transform: translate(270px, -110px) rotate(-90deg);
+}
+
+.magic-four{
+  position: relative;
+  width: 100px;
+  height: 45px;
+  border-radius: 50px 25px 50px 10px;
+  background: rgb(195, 92, 153);
+  transform: translate(270px, 9.5px) rotate(-90deg);
+}
+
+.magic-five{
+  position: relative;
+  width: 80px;
+  height: 45px;
+  border-radius: 50px 50px 10px 10px;
+  background: rgb(195, 92, 153);
+  transform: translate(279px, 54.5px) rotate(-90deg);
+}
+
+.magic-six{
+  position: relative;
+  width: 300px;
+  height: 65px;
+  border-radius: 50px 20px 30px 20px;
+  background: rgb(195, 92, 153);
+  transform: translate(-2.5px, 27px);
+}
+
+.magic-text {
+  font-family:'Kalnia Glaze';
+  font-weight: bold;
+  transform: translate(105px, 70px);
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+body, html {
+  margin: 0;
+  background: -webkit-radial-gradient(center, ellipse cover, #111 10%, #333 90%);
+}
+
+.alphabet {
+	font-family: "Oleo Script";
+  text-align: center;
+	color: transparent;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  font-size: 6vw;
+  background-image: url('https://i.pinimg.com/originals/24/76/b8/2476b8e35076b293172076e59e670d40.gif');
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  padding: 3.9px 0;
+}
+
+h3 {
+  margin: 0;
+  white-space: pre;
+  font-size: 75px;
+  line-height: 1.2;
+}
+
+.glow-on-hover {
+  font-family: "Oleo Script";
+  color: powderblue;
+  font-size: 18px;
+  text-align: center;
+  width: 220px;
+  height: 30px;
+  padding: 5px 20px;
+  background: transparent;
+  cursor: cell;
+  position: fixed;
+  z-index: 0;
+  border-radius: 40px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.glow-on-hover:first-of-type {
+  bottom: 110px;
+  right: 30px;
+}
+
+.glow-on-hover:last-of-type {
+  bottom: 50px;
+  right: 30px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #b149b9, #a4cedf, #bba2d4, #ca90ce, #b149b9);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 40px;
+}
+
+.glow-on-hover:active {
+  color: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  left: 0;
+  top: 0;
+  border-radius: 40px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
