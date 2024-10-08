@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.oval-container {
+    position:absolute;
+    top:25%;
+    left:40%;
+  }
+
+.oval-one, .oval-two, .oval-three {
+    background: rgb(208, 12, 12);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.oval-one {
+    width: 100px;
+    height: 200px;
+    background: rgb(208, 12, 12);
+    border-radius: 60%;
+    position: absolute;
+    top: -50px;
+    transform: translate(180px) rotate(-30deg) scale(0.9);
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+
+.oval-one:hover {
+    transform: translate(180px) rotate(-40deg) scale(0.9);
+}
+  
+.oval-two {
+    width: 100px;
+    height: 200px;
+    background: rgb(208, 12, 12);
+    border-radius: 60%;
+    position: absolute;
+    top: 150px;
+    transform: translate(299px, -197px) rotate(30deg) scale(0.9);
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+
+.oval-two:hover {
+    transform: translate(299px, -197px) rotate(40deg) scale(0.9);
+}
+
+.oval-three {
+    width: 100px;
+    height: 200px;
+    background: rgb(208, 12, 12);
+    border-radius: 60%;
+    position: relative; /* Enable positioning */
+    top: 350px; /* Move it upwards by 50px */
+    transform: translate(206px, -243px) rotate(30deg)scale(0.9);
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+.oval-three:hover {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: translate(206px, -243px) scale(1);
+}
+
+/* Eyes */
+.eye {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    transform: scale(0.8);
+    display: none; /* Initially hidden */
+}
+
+.left-eye {
+    top: 40px;
+    left: 35px;
+}
+
+.right-eye {
+    top: 40px;
+    right: 35px;
+}
+
+/* Nose */
+.nose {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid pink;
+    border-radius: 10px;
+    top: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Initially hidden */
+}
+
+.nose-line {
+    position: absolute;
+    width: 2.2px;
+    height: 10.2px;
+    background-color: pink;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Initially hidden */
+}
+
+.oval-three:hover {
+    cursor: alias;
+}
+
+
+.oval-three:hover .eye, 
+.oval-three:hover .nose,
+.oval-three:hover .nose-line,
+.oval-three:hover .ear {
+    display: block;
+}
+
+.oval-three:hover,
+.oval-three:hover ~ .oval-one,
+.oval-three:hover ~ .oval-two {
+    background: black;
+}
+
+.ear {
+    position: absolute;
+    top: -92px;
+    left: 8px;
+    width: 45px;
+    height: 90px;
+    background: white;
+    border-radius: 50%;
+    transform: scale(1);
+    display: none;
+    z-index: 10;
+    box-shadow: 0 0 30px rgb(255, 255, 255),
+                0 0 40px rgba(255, 192, 203, 0.5);
+}
+
+.left-ear {
+    position: absolute;
+    transform: rotate(-30deg)
+}
+
+.right-ear {
+    position: absolute;
+    left: 117px;
+    transform: rotate(30deg)
+}
+
+.container {
+    padding-top: 330px;
+    padding-left: 580px;
+}
+
+p {
+    font-family: VT323;
+    font-size: 17px;
+    animation: rabbitWord 1s linear infinite alternate;
+}
+
+@keyframes rabbitWord {
+    0%{
+        color: black;
+        transform: translate(0);
+    }
+
+    50%{
+        color: grey;
+        transform: translate(0, 20px);
+    }
+
+    100%{
+        color: white;
+        transform: translate(0, 40px);
+    }
+}
+
+a {
+    position: fixed;
+    right: 5%;
+    font-family: VT323;
+    font-size: 30px;
+    color: plum;
+}
+
+a:first-of-type {
+    bottom: 75px;
+}
+
+a:last-of-type {
+    bottom: 40px;
+}
+
+.circle-1 {
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    opacity: 0.1;
+    border-radius: 50%;
+    animation: moveCircle 2s linear infinite alternate;
+}
+
+.circle-2 {
+    position: fixed;
+    bottom: 35px;
+    right: 0;
+    width: 60px;
+    height: 25px;
+    background-color: black;
+    opacity: 0.1;
+    border-radius: 40%;
+    animation: moveCircle 2s linear infinite alternate;
+}
+
+@keyframes moveCircle {
+    0% {
+        right: 5%;
+    }
+    100% {
+        right: 18%;
+    }
+}
