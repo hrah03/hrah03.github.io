@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Oleo+Script:wght@400;700&family=Reenie+Beanie&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Gaegu&family=Hi+Melody&family=Nanum+Pen+Script&family=Oleo+Script:wght@400;700&family=Reenie+Beanie&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Gaegu&family=Hi+Melody&family=Nanum+Pen+Script&family=Oleo+Script:wght@400;700&family=Peddana&family=Reenie+Beanie&family=Zeyada&display=swap');
+
+body {
+    font-family: Dawning of a New Day;
+    background-image: url('https://github.com/hrah03/hrah03.github.io/blob/main/Warmth_stardust10.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 260vh;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .quote[lang="ko"] {
+    font-family: Gaegu;
+    font-size: 16px;
+  }
+
+  .quotes-container {
+    max-width: 800px;
+    display: grid;
+    gap: 20px;
+  }
+  
+  .quote {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 25px;
+    line-height: 1.5;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .quote:hover {
+    cursor:context-menu;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-10px, 5px);
+    }
+    50% {
+      transform: translate(10px, -5px);
+    }
+    75% {
+      transform: translate(-5px, -10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+.overlay-card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 420px;
+    padding: 28px;
+    border-radius: 28px;
+    box-shadow: -3px 5px 12px rgba(0, 0, 0, 0.3);
+    color: black;
+    text-align:justify;
+    z-index: 2;
+    font-family: Paddena, light;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: context-menu;
+}
+
+.overlay-card.show {
+    display: block;
+}
+
+#overlayCard1 {
+    background: radial-gradient(rgb(164, 215, 130), rgb(204, 204, 204));
+}
+
+#overlayCard2 {
+    background: radial-gradient(rgb(160, 34, 70), rgb(212, 212, 212));
+}
+
+#overlayCard3 {
+    background: radial-gradient(rgb(236, 237, 143), rgb(237, 237, 237));
+}
+
+.dimmed-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.dimmed-background.show {
+    display: block;
+}
+
+.home-button {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: transparent;
+    color: lightyellow;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.home-button a{
+    color: rgb(255, 255, 95);
+    text-decoration: none;
+}

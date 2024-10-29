@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Oleo+Script:wght@400;700&family=Reenie+Beanie&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Gaegu&family=Hi+Melody&family=Nanum+Pen+Script&family=Oleo+Script:wght@400;700&family=Reenie+Beanie&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Gaegu&family=Hi+Melody&family=Nanum+Pen+Script&family=Oleo+Script:wght@400;700&family=Peddana&family=Reenie+Beanie&family=Zeyada&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://github.com/hrah03/hrah03.github.io/blob/main/Warmth_landingpage-11111.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.warmth-text {
+    font-family: Dawning of a New Day;
+    font-size: 100px;
+    color: lightgoldenrodyellow;
+    margin-top: 30vh;
+    text-align: center;
+}
+
+.warmth-text a{
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+}
+
+h1 {
+    position: relative;
+    cursor: pointer;
+}
+
+h1:hover::after {
+    content: "click on me";
+    position: absolute;
+    bottom: 30px;
+    left: 100%;
+    margin-left: 10px;
+    background-color: lightgoldenrodyellow;
+    color: rgb(0, 0, 0);
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-family: Paddena;
+    font-size: 11px;
+    white-space: nowrap;
+    z-index: 10;
+}

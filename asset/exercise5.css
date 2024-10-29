@@ -48,8 +48,8 @@
     height: 200px;
     background: rgb(208, 12, 12);
     border-radius: 60%;
-    position: relative; /* Enable positioning */
-    top: 350px; /* Move it upwards by 50px */
+    position: relative;
+    top: 350px;
     transform: translate(206px, -243px) rotate(30deg)scale(0.9);
     transition: all 0.3s ease;
     z-index: 2;
