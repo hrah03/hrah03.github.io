@@ -1,7 +1,4 @@
-function toggleOverlay(quoteNumber) {
-    document.querySelectorAll(".overlay-card").forEach(card => card.classList.remove("show"));
-    document.querySelector(".dimmed-background").classList.toggle("show");
-
-    const overlayCard = document.getElementById(`overlayCard${quoteNumber}`);
-    overlayCard.classList.toggle("show");
+function toggleOverlay() {
+    const overlay = document.getElementById("belovedOverlay");
+    overlay.style.display = overlay.style.display === "flex" ? "none" : "flex";
 }

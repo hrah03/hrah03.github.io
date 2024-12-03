@@ -1,68 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Oleo+Script:wght@400;700&family=Reenie+Beanie&family=Zeyada&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Gaegu&family=Hi+Melody&family=Nanum+Pen+Script&family=Oleo+Script:wght@400;700&family=Reenie+Beanie&family=Zeyada&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Gaegu&family=Hi+Melody&family=Nanum+Pen+Script&family=Oleo+Script:wght@400;700&family=Peddana&family=Reenie+Beanie&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Waiting+for+the+Sunrise&display=swap');
 
 body {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
-    background-image: url('https://github.com/hrah03/hrah03.github.io/blob/main/Warmth_landingpage-22222.jpg?raw=true');
+    background-image: url('https://github.com/hrah03/hrah03.github.io/blob/main/Final_Warmth_landingpage5.jpg?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 p {
-    font-family: Dawning of a New Day;
+    font-family: Waiting for the Sunrise;
     font-size: 28px;
-    color: lightgoldenrodyellow;
+    position: absolute;
 }
 
 .position1 {
-    position: absolute;
-    top: 300px;
-    right: 410px;
-}
-
-.position1 a {
-    color: lightgoldenrodyellow;
-    text-decoration: none;
+    top: 38.8%;
+    right: 31.8%;
 }
 
 .position2 {
-    position: absolute;
-    top: 485px;
-    left: 325px;
+    top: 60.2%;
+    left: 26%;
 }
 
-.position2 a {
-    color: lightgoldenrodyellow;
+.position3 {
+    top: 73%;
+    left: 8%;
+}
+
+.position1 a, .position2 a, .position3 a {
+    color: gold;
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.7);
     text-decoration: none;
+    cursor: pointer;
 }
 
-p {
-    position: relative;
-    cursor: cell;
-}
-
-p a {
-    cursor: cell;
-}
-
-p:hover::after {
-    content: "click on me";
-    position: absolute;
+.home-button {
+    position: fixed;
     top: 30px;
-    left: 100%;
-    margin-left: 10px;
-    background-color: lightgoldenrodyellow;
-    color: rgb(0, 0, 0);
-    padding: 5px 5px;
-    border-radius: 10px;
-    font-family: Paddena;
-    font-size: 11px;
-    white-space: nowrap;
-    z-index: 10;
+    right: 30px;
+    font-size: 30px;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
