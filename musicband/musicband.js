@@ -81,4 +81,5 @@ file.addEventListener('change', function () {
     audio1.play();
     setupAnalyser();
     animate();
+    audio1.style.display = 'block';
 });

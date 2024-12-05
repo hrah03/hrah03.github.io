@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Oleo+Script:wght@400;700&family=Reenie+Beanie&family=Zeyada&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Gaegu&family=Hi+Melody&family=Nanum+Pen+Script&family=Oleo+Script:wght@400;700&family=Reenie+Beanie&family=Zeyada&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Gaegu&family=Hi+Melody&family=Nanum+Pen+Script&family=Oleo+Script:wght@400;700&family=Peddana&family=Reenie+Beanie&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Waiting+for+the+Sunrise&display=swap');
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('https://github.com/hrah03/hrah03.github.io/blob/main/Warmth_stardust10.jpg?raw=true');
+    background-image: url('https://github.com/hrah03/hrah03.github.io/blob/main/Final_Warmth_landingpage.jpg?raw=true');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
-    font-family: Dawning of a New Day;
+    font-family: Waiting for the Sunrise;
     z-index: -1;
 }
   
@@ -34,7 +32,7 @@ body {
     text-align: center;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255, 0, 150, 0.5), rgba(0, 200, 255, 0.5));
-    color: #fff;
+    color: rgb(109, 109, 109);
     font-size: 22px;
     padding: 20px;
     font-weight: bold;
@@ -84,12 +82,11 @@ body {
     width: 250px;
     height: 250px;
     padding: 23.3px;
-    border-radius: 23.3px;
-    box-shadow: -3px 5px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 23px;
     color: white;
     text-align: center;
     z-index: 10;
-    font-family: Paddena, light;
+    font-family: Waiting for the Sunrise, light;
     font-size: 16px;
     line-height: 19px;
     cursor: alias;
@@ -151,7 +148,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 5;
 }
 .dimmed-background.show {
@@ -175,17 +172,33 @@ a:hover {
 
 .home-button {
     position: fixed;
+    top: 27.7px;
+    right: 75px;
+    font-size: 30px;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .home-button:hover {
+    animation: rotate 8s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .back-button {
+    position: fixed;
     top: 30px;
     right: 30px;
-    background-color: transparent;
-    color: lightyellow;
-    font-size: 24px;
-    border: none;
-    cursor: pointer;
-    z-index: 3;
-}
-
-.home-button a{
-    color: rgb(255, 255, 95);
+    font-size: 27px;
+    color: gray;
     text-decoration: none;
-}
+    cursor: pointer;
+  }

@@ -4,14 +4,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Cindy's Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="index.js" defer></script>
+    <style>
+      #darkmode {
+        padding: 8px 14px;
+        font-size: 12px;
+        color: white;
+        background-color: rgb(60, 60, 60);
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      .darkmode-style {
+        color: white;
+        font-weight: bold;
+      }
+
+      body {
+        background-color: white;
+        color: black;
+      }
+    </style>
   </head>
+
   <body>
+    <div id="darkmode-content">
     <h1>Hello</h1>
     <a href="exercise2/exercise2_1.html" >Exercise Two</a><br>
     <a href="exercise3/exercise3_1.html" >Exercise Three</a><br>
     <a href="exercise4/exercise4_1.html" >Exercise Four</a><br>
     <a href="exercise5/exercise5.html" >Exercise Five</a><br>
-    <a href="warmth/warmth.html" >Warmth</a>
-    <a href="musicband/musicband.html" >Flowerwave</a>
+    <a href="warmth/warmth.html" >Warmth</a><br>
+    <a href="musicband/musicband.html" >Flowerwave</a><br>
+
+    <button id="darkmode">Darkmode</button>
+    </div>
   </body>
 </html>

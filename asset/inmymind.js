@@ -1,4 +1,5 @@
-function toggleOverlay() {
-    const overlay = document.getElementById("belovedOverlay");
-    overlay.style.display = overlay.style.display === "flex" ? "none" : "flex";
-}
+function toggleOverlay(overlayId) {
+    document.querySelectorAll('.overlay').forEach((el) => {
+      el.style.display = el.id === overlayId && el.style.display !== 'flex' ? 'flex' : 'none';
+    });
+  }
