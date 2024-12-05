@@ -62,7 +62,6 @@
     transform: translate(206px, -243px) scale(1);
 }
 
-/* Eyes */
 .eye {
     position: absolute;
     width: 20px;
@@ -70,7 +69,7 @@
     background: white;
     border-radius: 50%;
     transform: scale(0.8);
-    display: none; /* Initially hidden */
+    display: none;
 }
 
 .left-eye {
@@ -83,7 +82,6 @@
     right: 35px;
 }
 
-/* Nose */
 .nose {
     position: absolute;
     width: 0px;
@@ -95,7 +93,7 @@
     top: 88px;
     left: 50%;
     transform: translateX(-50%);
-    display: none; /* Initially hidden */
+    display: none;
 }
 
 .nose-line {
@@ -106,7 +104,7 @@
     top: 100px;
     left: 50%;
     transform: translateX(-50%);
-    display: none; /* Initially hidden */
+    display: none;
 }
 
 .oval-three:hover {
